@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div>Hero</div>
   )
