@@ -1,5 +1,7 @@
 'use client';
 
+import SearchManufacturer from "./SearchManufacturer";
+
 const SearchBar = () => {
     const handleSearch = () => {}
     return (
