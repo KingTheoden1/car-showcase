@@ -10,4 +10,6 @@ export {
     CustomButton,
     Navbar,
     Footer,
+    SearchBar,
+    CustomFilter
 }
