@@ -1,5 +1,4 @@
 import { fetchCars } from '@/utils';
-import { HomeProps } from '@/types';
 import Image from 'next/image';
 import { CarCard, CustomFilter, Hero, SearchBar } from '@/components';
 
