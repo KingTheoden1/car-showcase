@@ -1,3 +1,8 @@
+// Shown by default when no manufacturer is selected (keeps API requests low)
+export const featuredManufacturers = [
+  "Toyota", "Honda", "Ford", "BMW", "Mercedes-Benz", "Chevrolet", "Audi", "Tesla",
+];
+
 export const manufacturers = [
     "Acura",
     "Alfa Romeo",
@@ -56,18 +61,23 @@ export const manufacturers = [
   ];
   
   export const fuels = [
-    {
-      title: "Fuel",
-      value: "",
-    },
-    {
-      title: "Gas",
-      value: "Gas",
-    },
-    {
-      title: "Electricity",
-      value: "Electricity",
-    },
+    { title: "Fuel", value: "" },
+    { title: "Gas", value: "gas" },
+    { title: "Electricity", value: "electricity" },
+  ];
+
+  export const driveTypes = [
+    { title: "Drive", value: "" },
+    { title: "FWD", value: "fwd" },
+    { title: "RWD", value: "rwd" },
+    { title: "AWD", value: "awd" },
+    { title: "4WD", value: "4wd" },
+  ];
+
+  export const transmissions = [
+    { title: "Transmission", value: "" },
+    { title: "Automatic", value: "a" },
+    { title: "Manual", value: "m" },
   ];
   
   export const footerLinks = [

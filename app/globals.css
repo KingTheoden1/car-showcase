@@ -43,19 +43,19 @@
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold dark:text-white;
 }
 
 .hero__subtitle {
-  @apply text-[27px] text-black-100 font-light mt-5;
+  @apply text-[27px] text-black-100 font-light mt-5 dark:text-gray-300;
 }
 
 .hero__image-container {
-  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-[540px];
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+  @apply relative xl:w-full w-[90%] xl:h-full h-[380px] z-0;
 }
 
 .hero__image-overlay {
@@ -66,7 +66,7 @@
 /* START: Home styles */
 
 .home__text-container {
-  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
+  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100 dark:text-white;
 }
 
 .home__filters {
@@ -82,13 +82,13 @@
 }
 
 .home__error-container {
-  @apply mt-16 flex justify-center items-center flex-col gap-2;
+  @apply mt-16 flex justify-center items-center flex-col gap-2 dark:text-white;
 }
 /* END: Home styles */
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl dark:bg-[#1e1e2e] dark:text-white dark:hover:bg-[#2a2a3e];
 }
 
 .car-card__content {
@@ -148,11 +148,11 @@
 
 /* START: Custom Filter styles */
 .custom-filter__btn {
-  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
+  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border dark:bg-[#1e1e2e] dark:text-white dark:border-gray-600;
 }
 
 .custom-filter__options {
-  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm dark:bg-[#1e1e2e] dark:text-white dark:ring-gray-600 z-50;
 }
 /* END: Custom Filter styles */
 
@@ -188,7 +188,7 @@
 
 /* START: searchbar styles */
 .searchbar {
-  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
+  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl z-20;
 }
 
 .searchbar__item {
@@ -196,7 +196,7 @@
 }
 
 .searchbar__input {
-  @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
+  @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm dark:bg-[rgba(255,255,255,0.05)] dark:text-white dark:placeholder:text-gray-400;
 }
 /* END: searchbar styles */
 
@@ -206,11 +206,11 @@
 }
 
 .search-manufacturer__input {
-  @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-light-white outline-none cursor-pointer text-sm;
+  @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-light-white outline-none cursor-pointer text-sm dark:bg-[rgba(255,255,255,0.05)] dark:text-white dark:placeholder:text-gray-400;
 }
 
 .search-manufacturer__options {
-  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm dark:bg-[#1e1e2e] dark:text-white dark:ring-gray-600 z-50;
 }
 
 .search-manufacturer__option {

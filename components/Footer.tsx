@@ -4,9 +4,7 @@ import { footerLinks } from '@/constants';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col
-    text-black-100 mt-5 border-t
-    border-gray-100'>
+    <footer className='flex flex-col text-black-100 dark:text-white mt-5 border-t border-gray-100 dark:border-gray-700'>
       <div className="flex max-md:flex-col
       flex-wrap justify-between gap-5 sm:px-16
       px-6 py-10">
@@ -14,9 +12,8 @@ const Footer = () => {
         justify-start items-start gap-6">
           <Image src='/logo.svg' alt='logo'
           width={118} height={18}
-          className='object-contain' />
-          <p className="text-base
-          text-gray-700">
+          className='object-contain dark:invert' />
+          <p className="text-base text-gray-700 dark:text-gray-300">
             Carhub 2023 <br />
             All rights reserved &copy;
           </p>
@@ -31,7 +28,7 @@ const Footer = () => {
                 <Link 
                   key={item.title}
                   href={item.url}
-                  className='text-gray-500'
+                  className='text-gray-500 dark:text-gray-400'
                 >
                   {item.title}
                 </Link>
@@ -41,10 +38,8 @@ const Footer = () => {
         </div>
         </div>
 
-        <div className="flex justify-between
-        items-center flex-wrap mt-10 border-t
-        border-gray-100 sm:px-16 px-6 py-10">
-          <p>@2023 Carhub. All Rights Reserved</p>
+        <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 dark:border-gray-700 sm:px-16 px-6 py-10">
+          <p className="dark:text-gray-300">@2023 Carhub. All Rights Reserved</p>
           
           <div className="footer__copyrights-link">
             <Link href='/' className='text-gray-500'>

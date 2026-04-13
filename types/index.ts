@@ -36,6 +36,8 @@ export interface FilterProps {
     fuel: string;
     limit: number;
     model: string;
+    drive: string;
+    transmission: string;
 }
 
 export interface OptionProps {
@@ -46,6 +48,7 @@ export interface OptionProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
+    setFilter: (value: string) => void;
 }
 
 export interface ShowMoreProps {

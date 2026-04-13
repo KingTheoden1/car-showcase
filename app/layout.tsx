@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='relative'>
+      <body className='relative bg-white dark:bg-[#13131a] transition-colors'>
           <Navbar />
           {children}
           <Footer />
