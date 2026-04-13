@@ -51,7 +51,7 @@
 }
 
 .hero__image-container {
-  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-[540px];
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-[540px] xl:pt-24;
 }
 
 .hero__image {
