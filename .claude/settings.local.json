@@ -70,7 +70,8 @@
       "Bash(curl -s http://localhost:3000)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(curl -s \"https://carimagesapi.com/api/v1/signed-url?api_key=ci_3a8c5f81f94c868bdcc44ea864098b27bbd33f34366968ee4bedb2dd&make=BMW&model=3+Series&year=2022\")"
+      "Bash(curl -s \"https://carimagesapi.com/api/v1/signed-url?api_key=ci_3a8c5f81f94c868bdcc44ea864098b27bbd33f34366968ee4bedb2dd&make=BMW&model=3+Series&year=2022\")",
+      "Bash(npx tsc:*)"
     ]
   }
 }

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { fetchCars } from '@/utils';
-import { CarProps } from '@/types';
+import { CarProps, FilterProps } from '@/types';
 import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from '@/components';
 import { fuels, yearsOfProduction, driveTypes, transmissions, featuredManufacturers } from '@/constants';
 import Image from 'next/image';
@@ -36,7 +36,7 @@ export default function Home() {
       return true;
     });
 
-  const fetchAllMakes = async (filters: Record<string, string | number>) => {
+  const fetchAllMakes = async (filters: Omit<FilterProps, 'manufacturer'>) => {
     const results: CarProps[] = [];
     const batchSize = 5;
     for (let i = 0; i < featuredManufacturers.length; i += batchSize) {
