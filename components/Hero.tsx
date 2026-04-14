@@ -6,6 +6,7 @@ import { CustomButton } from "@/components";
 
 const Hero = () => {
   const handleScroll = () => {
+    document.getElementById('discover')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

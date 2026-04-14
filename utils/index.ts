@@ -1,7 +1,7 @@
 import { CarProps, FilterProps } from "@/types";
 
 export async function fetchCars(filters: FilterProps) {
-    const { manufacturer, year, model, limit, fuel, drive, transmission } = filters;
+    const { manufacturer, year, model, fuel } = filters;
 
     const headers = {
         'X-RapidAPI-Key': '3284f3090bmsh2216203ed9e94c7p163f0fjsn0758e85f5594',
@@ -59,13 +59,3 @@ export const fetchCarImage = async (car: CarProps): Promise<string> => {
     return '/hero.png';
   }
 };
-
-export const updateSearchParams = (type: string, value: string) => {
-    const searchParams = new URLSearchParams(window.location.search);
-    
-    searchParams.set(type, value);
-
-    const newPathname = `${window.location.pathname}?${searchParams.toString()}`
-
-    return newPathname;
-}
