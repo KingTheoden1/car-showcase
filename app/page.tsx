@@ -31,6 +31,7 @@ export default function Home() {
 
   const applyClientFilters = (cars: CarProps[]) =>
     cars.filter(car => {
+      if (car.year < 2015 || car.year > 2023) return false;
       if (drive && car.drive?.toLowerCase() !== drive.toLowerCase()) return false;
       if (transmission && car.transmission !== transmission) return false;
       return true;
@@ -65,7 +66,8 @@ export default function Home() {
     setError('');
     try {
       const filters = {
-        year: year || '',
+        // Default to 2020 when no year selected — free API returns random old years otherwise
+        year: year || '2020',
         fuel: fuel || '',
         limit: limit || 10,
         model: model || '',
